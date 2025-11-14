@@ -1,0 +1,49 @@
+THIS IS A SAMPLE OF HOW THE FOLDER IS STRUCTURED
+
+
+emerald-hostel/
+│
+├── index.html                → Landing page
+├── Booking-steps.html                → About the hostel
+├── contact.html              → Contact page
+├── faq.html                  → FAQ page
+│
+├── login.html                → Login page
+├── register.html               → Signup page
+│
+├── app/                      → Protected pages (require login)
+│   ├── dashboard.html        → Main booking dashboard
+│   ├── rooms.html            → Available rooms list
+│   ├── book-room.html        → Booking form page
+│   ├── profile.html          → User profile/settings
+│   └── bookings.html         → View user bookings
+│
+├── admin/                    → Admin-only pages (optional)
+│   ├── admin-login.html
+│   ├── admin-dashboard.html
+│   ├── manage-rooms.html
+│   └── bookings-approval.html
+│
+├── css/
+│   ├── style.css             → Main site styles
+│   ├── auth.css              → Login/Signup styles
+│   ├── app.css               → Booking app styles
+│   └── admin.css             → Admin panel styles
+│
+├── js/
+│   ├── auth.js               → Login & signup logic
+│   ├── app.js                → Dashboard & booking logic
+│   ├── rooms.js              → Room fetching & display
+│   ├── booking.js            → Booking form logic
+│   ├── admin.js              → Admin functions
+│   └── protect.js            → Redirects users if not logged in
+│
+├── assets/
+│   ├── images/
+│   │   ├── hero.jpg
+│   │   ├── rooms/
+│   │   └── icons/
+│   └── fonts/
+│
+└── data/
+    └── sample.json           → Optional mock data (if needed)
