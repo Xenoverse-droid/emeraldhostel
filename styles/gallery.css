@@ -1,0 +1,71 @@
+/* GALLERY  AND FAQ */
+
+
+body {
+    background:
+        linear-gradient(to right,  #005d35bb, #007643e5),
+        url('../images/hero-background.jpeg') center/cover no-repeat;
+}
+
+
+
+.gallery-container {
+    border-radius: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 120rem;
+    width: 90%;
+    gap: 2rem;
+    margin: 0 auto;
+    border: 2px solid #DFF1C9;
+    padding: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+.gallery-container  .gallery-anchor {
+    max-width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 4rem;
+}
+
+.gallery-anchor img {
+    width: 40rem;
+    height: 40rem;
+}
+
+
+/* FAQ TITLE */
+.faq-title {
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 120rem;
+    width: fit-content;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    display: flex; 
+    background-color: #DFF1C9;
+}
+
+.lead {
+    color: #002e1a;
+    margin-bottom: 2rem;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+    margin-bottom: 1rem;
+    color: #002e1a;
+}

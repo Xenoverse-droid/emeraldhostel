@@ -1,0 +1,47 @@
+body {
+    background:
+        linear-gradient(to right, #005d35bb, #007643e5),
+        url('../images/hero-background.jpeg') center/cover no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #004024;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #002a18;
+    line-height: 1.2;
+}
+
+li {
+    font-size: 1.6rem;
+    color: #004024;
+    line-height: 2;
+}
+
+.booking-steps-container {
+    border-radius: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 120rem;
+    width: 90%;
+    gap: 2rem;
+    margin: 0 auto;
+    background-color: #DFF1C9;
+    padding: 4rem;
+    margin-bottom: 4rem;
+}
+
+.booking-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.booking-img img {
+    max-width: 40rem;
+}
