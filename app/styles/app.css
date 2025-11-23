@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #006B3D;
+    --color-secondary: #f9f7e8;
+    --color-tertiary: #DFF1C9;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    
+    height: 100vh;
+    display: flex;
+
+}
+
+
+/* ----- SIDE BAR ----- */
+.side-anchor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Oleo Script", system-ui;
+    color: var(--color-primary);
+}
+
+
+.side-anchor img {
+    width: 5rem;
+}
+
+.side-bar {
+    overflow: hidden;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    min-height: 100vh;
+    max-width: 22rem;
+    /* width: 20%; */
+    padding: 2rem 0rem 4rem 0rem;
+}
+
+.side-pannel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+
+.side-menu, .side-actions {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.side-menu button, .side-actions button {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 1.2rem;
+    border: none;
+    outline: none;
+    padding: 0rem 1rem 0rem 1rem;
+    cursor: pointer;
+    color: var(--color-primary);
+}
+
+.side-menu button:hover, .side-actions button:hover {
+    background-color: #DFF1C9;
+    transition: 0.2s;
+    transform: scale(1.09);
+}
+
+.side-menu button:active, .side-actions button:active {
+    transform: scale(0.89);
+}
+
+
+/* -------  MAIN CONTENT ------- */
+.main-button:active {
+    transition: 0.2s;
+    transform: scale(0.89);
+}
+
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.hamburger {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+    display: none;
+}
+
+.hamburger:active {
+    transform: scale(0.92);
+}
+
+.nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.notification {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+}
+
+.notification::after {
+    content: "1";
+    position: absolute;
+    top: 0px;
+    right: 1px;
+    background-color: rgb(223, 12, 12);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    color: var(--color-secondary);
+}
+
+.user-name {
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.profile-picture {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+}
+
+/*  -------- MAIN APPLICATION ----------*/
+.main-app {
+    overflow: auto;
+    scrollbar-width: none;
+    flex: 1;
+    margin: 0rem 2rem 2rem 2rem;
+}
+
+
+/* ---- SHOULD BE REMOVED ---- */
+.up-coming {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+

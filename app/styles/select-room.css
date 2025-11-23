@@ -1,0 +1,61 @@
+.room-header {
+    position: sticky;
+    top: 0;
+}
+
+.room-map {
+    max-height: 35rem;
+
+}
+
+.room-select-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.room-select-btn, .proceed-btn {
+    transition: 0.1s;
+}
+
+.room-select-btn:hover, .proceed-btn:hover {
+    transform: scale(1.09);
+}
+
+.room-select-btn:active, .proceed-btn:active {
+    transform: scale(0.99);
+    /* transition: 0.6s; */
+}
+
+.select-btn-containter {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4rem;
+}
+
+.select-instructions {
+    display: flex;
+    gap: 2.6rem;
+}
+
+
+.select-instructions div p {
+    font-size: 1.6rem;
+    color: #f9f7e8;
+}
+
+.select-instructions div img {
+    height: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.proceed-btn {
+    max-width: 20rem;
+    width: 40%;
+    margin-top: 2rem;
+    padding: 1rem 3.8rem;
+    background-color: #006B3D;
+    color: #f9f7e8;
+    outline: none;
+    border: none;
+}

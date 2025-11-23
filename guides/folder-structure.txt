@@ -4,12 +4,11 @@ THIS IS A SAMPLE OF HOW THE FOLDER IS STRUCTURED
 emerald-hostel/
 │
 ├── index.html                → Landing page
-├── Booking-steps.html                → About the hostel
+├── Booking-steps.html        → Booking steps
 ├── contact.html              → Contact page
 ├── faq.html                  → FAQ page
-│
 ├── login.html                → Login page
-├── register.html               → Signup page
+├── register.html             → Signup page
 │
 ├── app/                      → Protected pages (require login)
 │   ├── dashboard.html        → Main booking dashboard

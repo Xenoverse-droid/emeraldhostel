@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../images/emerald-logonb.svg">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/booking-info.css">
+    <link rel="stylesheet" href="styles/select-room.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <title>Emerald Hostel</title>
+</head>
+
+<body>
+    <div class="side-bar">
+        <div class="logo-container">
+            <a href="#" class="side-anchor"><img src="../images/emerald-logonb.svg" alt="emerald hosel logo"
+                    class="nav-logo"> <span class="emerald-txt">Emerald Hostel</span></a>
+        </div>
+        <div class="side-pannel">
+            <div class="side-menu">
+                <button class="side-buttons" data-page="home.html"><img src="app-icons/sidebar-icons/home.svg"
+                        alt="home">Home</button>
+                <button class="side-buttons" data-page="room-booking.html"><img
+                        src="app-icons/sidebar-icons/select-room.svg" alt="select room">Select Room</button>
+                <button class="side-buttons" data-page="confirm-payment.html"><img
+                        src="app-icons/sidebar-icons/confirm-payment.svg" alt="confirm payment">Confirm Payment</button>
+                <button class="side-buttons" data-page="password-change.html"><img
+                        src="app-icons/sidebar-icons/change-password.svg" alt="change password">Change Password</button>
+                <button class="side-buttons" data-page="account.html"><img
+                        src="app-icons/sidebar-icons/manage-account.svg" alt="Manage account">Manage Account</button>
+                <button class="side-buttons" data-page="profile.html"><img
+                        src="app-icons/sidebar-icons/edit-profile.svg" alt="Edit profile">Edit Profile</button>
+            </div>
+            <div class="side-actions">
+                <!-- <button><img src="app-icons/sidebar-icons/settings.svg" alt="settings icon">Settings</button> -->
+                <button class="logout"><img src="app-icons/sidebar-icons/logout.svg" alt="logout icon">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <nav class="main-nav">
+            <button class="hamburger"><img src="./app-icons/icons/hamburger-menu.svg" alt="hamburger icons"></button>
+            <div class="nav-profile">
+                <button class="notification main-button"><img src="app-icons/notification-icon.svg"></button>
+                <img class="profile-picture" src="app-icons/PHOTO FOR FLYER.jfif" alt="user profile">
+                <p class="user-name">Samuel</p>
+            </div>
+        </nav>
+        <div class="main-app">
+            <div class="home-container">
+                <div class="booking-info">
+                    <div class="header">
+                        <h1 class="booking-title">Booking Information</h1>
+                        <p>Details of Board</p>
+                    </div>
+                    <ul class="booking-details">
+                        <li class="booking-data"><span class="booking-thead">Secssion:</span><span
+                                class="booking-content">2026/2027</span></li>
+                        <li class="booking-data"><span class="booking-thead">Rent Paid:</span><span
+                                class="booking-content">₦225, 000</span></li>
+                        <li class="booking-data"><span class="booking-thead">Room Number:</span><span
+                                class="booking-content">B130</span></li>
+                        <li class="booking-data last-data"><span class="booking-thead">Block:</span><span
+                                class="booking-content">MALE BLOCK</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>

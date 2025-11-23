@@ -59,7 +59,6 @@ a {
 }
 
 /* ---------- NAV BAR  --------- */
-
 nav {
     height: 10rem;
     max-width: 120rem;
@@ -71,7 +70,6 @@ nav {
     padding: 1rem 2rem;
     border-radius: 6rem;
     display: flex;
-    /* gap: 20rem; */
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -243,20 +241,25 @@ iframe {
 .about-grid {
     display: flex;
     flex-direction: column;
-
 }
 
-.about-grid-img {
-    max-width: 40rem;
-    height: 40rem;
-    border-radius: 4rem;
-    margin-left: 10rem;
+.about-grid-img:hover {
+    transition: 0.6s;
+    transform: scale(1.09);
 }
 
 .about-1 {
     display: flex;
 }
 
+
+.about-div {
+    max-width: 40rem;
+    height: 40rem;
+    margin-left: 10rem;
+    overflow: hidden;
+    border-radius: 4rem;
+}
 
 .about-paragraph {
     color: #002e1a;
@@ -404,3 +407,6 @@ small {
     color: #f9f7e8;
     margin-bottom: 2rem;
 }
+
+
+/* ----- ANIMATIONS -------- */
