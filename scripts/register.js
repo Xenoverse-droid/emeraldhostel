@@ -62,7 +62,7 @@ async function sendData() {
         const checkedData = await emailCheck.json();
         console.log(checkedData);
 
-        if (checkedData[0].email === email.value) {
+        if (Array.isArray(checkedData) && checkedData.length > 0 && checkedData[0].email === email.value)  {
             email.value = 'USER ALREADY EXIST';
             email.style.color = 'red';
             setTimeout(() => {
@@ -70,8 +70,8 @@ async function sendData() {
                 email.style.color = 'red';
                 return ;
             }, 2000)
-             window.location.href = './login.html'; // change to the login.html
-        } else {
+            window.location.href = './login.html'; // change to the login.html
+        } else if (checkedData.length === 0) {
             try {
                 const postRequest = await fetch('https://691f721731e684d7bfc9c163.mockapi.io/users', {
                     method: 'POST',
@@ -88,7 +88,7 @@ async function sendData() {
         }
 
     } catch (error) {
-        console.error('user noe exist')
+        console.error('ERROR FETCHING USER')
     }
 }
 

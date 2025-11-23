@@ -1,9 +1,9 @@
 import { getRooms } from "./scripts/room-booking.js";
-import { sideBarControll } from "./scripts/hamburger.js";
+import { sideBarControl } from "./scripts/hamburger.js";
 // NAV BAR CONTROLLER
 
 
-sideBarControll();
+sideBarControl();
 
 function getUserinfo() {
     return JSON.parse(localStorage.getItem('userinfo'));
