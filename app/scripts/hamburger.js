@@ -1,12 +1,23 @@
-export function sideBarControll() {
+export function sideBarControl() {
     const hamburger = document.querySelector('.hamburger');
+    const sidebar = document.querySelector('.side-bar');
+    const mainApp = document.querySelector('.main-app');
+
+    let showed = false;
 
     hamburger.addEventListener('click', () => {
-        document.querySelector('.side-bar').style.display = 'flex';
-    })
+        showed = true;
+        sidebar.classList.remove('side-bar-go');
+        sidebar.style.display = 'flex';
+    });
 
-
-    document.querySelector('.main-app').addEventListener('click', ()=> {
-        document.querySelector('.side-bar').style.display = 'none';
-    })
+    mainApp.addEventListener('click', () => {
+        if (showed) {
+            showed = false;
+            sidebar.classList.add('side-bar-go');
+            setTimeout(() => {
+                sidebar.style.display = 'none';
+            }, 250);
+        }
+    });
 }
