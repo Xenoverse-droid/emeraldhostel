@@ -10,12 +10,14 @@ const registerForm = document.querySelector('.register-form');
 // revisit and check the button logic
 registerForm.addEventListener('submit', async (e) => {
     e.preventDefault();
+    document.querySelector('.modal').style.display = 'flex';
     let hasEmpty = false;
 
 
     generalInput.forEach((input) => {
         if (input.value.trim() === '') {
             hasEmpty = true;
+            document.querySelector('.modal').style.display = 'none';
             input.style.color = 'red';
             input.value = 'Please fill this field';
             setTimeout(() => {
@@ -28,6 +30,7 @@ registerForm.addEventListener('submit', async (e) => {
     if (hasEmpty) return; // stops execution
 
     if (password.value !== passwordAgain.value) {
+        document.querySelector('.modal').style.display = 'none';
         password.value = 'Passwords arent the same';
         passwordAgain.value = 'Passwords arent the same';
         
